@@ -4,12 +4,17 @@
     box-sizing:border-box;
 }
 body{
-    width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction:column;
     justify-content: center;
 }
+#all{
+    width: 1440px;
+}
+
 /* head */
+
 #head {
     height: 600px;
     background: linear-gradient(to right,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
@@ -96,7 +101,9 @@ button{
     background: white;
     color: hsl(355, 100%, 74%);
 }
+
 /* intro */
+
 #intro{
     height: 1000px;
     display: grid;
@@ -113,7 +120,7 @@ button{
 }
 #intro-text{
     position: relative;
-    top: -100px;
+    top: -50px;
     padding: 0 40px 0 160px;
 }
 #intro h3{
@@ -125,6 +132,7 @@ button{
     line-height: 25px;
     font-size: 16px;
     letter-spacing: .5px;;
+    opacity: .8;
 }
 #image-intro{
     grid-column: 2/3;
@@ -132,17 +140,55 @@ button{
     background: url(images/illustration-editor-desktop.svg) no-repeat;
     background-position: -30% 50%;
 }
+
 /* main */
+
 #main{
     height: 400px;
     background: linear-gradient(to left, hsl(237, 23%, 32%), hsl(237, 17%, 21%));
     border-radius: 0 80px 0 80px;
+    color: white;
+    display: flex;
+    font-family: 'Overpass', sans-serif;
 }
+#image-main{
+    background-size: cover;
+    position: relative;
+    top: -60px;
+    left: 110px;
+}
+#text-main{
+    padding: 110px 100px 100px 200px;
+}
+#main h2{
+    font-size: 2.4em;
+    padding-bottom: 30px;
+}
+#main p{
+    line-height: 25px;
+    font-size: 16px;
+    letter-spacing: .5px;;
+    opacity: .8;
+    padding-right: 30px;
+}
+
 /* about */
+
 #about{
     height: 1000px;
+    display: flex;
 }
+#image-about{
+    background: url(images/illustration-laptop-desktop.svg) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+#about-text{
+    padding: 110px 100px 100px 100px;
+}
+
 /* footer */
+
 #foot{
     height: 350px;
     background: hsl(240, 10%, 16%);
