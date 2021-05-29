@@ -41,7 +41,6 @@ nav{
     display: flex;
     color: white;
     justify-content: space-between;
-    margin-bottom: 140px;
 }
 #head-left{
     display: flex;
@@ -55,6 +54,9 @@ a{
     padding-right: 12px;
     background: url(images/icon-arrow-light.svg) no-repeat;
     background-position: 100% 50%;
+}
+#log{
+    background: none;
 }
 a:hover{
     border-bottom: 1px solid white;
@@ -81,7 +83,7 @@ a:hover{
 }
 h1{
     font-size: 60px;
-    margin-bottom: 35px;
+    margin: 120px 0 0 35px;
 }
 h4{
     margin-bottom: 50px;
@@ -93,8 +95,10 @@ button{
     height: 50px;
     border-radius: 50px;
     border: none;
-    font-weight: 600;
+    font-weight: 700;
     margin-left: 20px;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .btnone{
     background: white;
